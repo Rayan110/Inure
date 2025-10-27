@@ -21,4 +21,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: thanox-apk
-          path: app/build/outputs/apk/debug/*.apk
+          path: - name: Upload APK
+  uses: actions/upload-artifact@v3
+  with:
+    name: thanox-apk
+    path: thanox-app/build/outputs/apk/debug/Thanox.apk
